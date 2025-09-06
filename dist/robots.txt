@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://promptmakers.app/sitemap.xml
+Sitemap: https://blog.promptmakers.app/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
