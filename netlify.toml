@@ -1,7 +1,89 @@
 [build]
   publish = "dist"
 
+# Trailing slash redirects
+[[redirects]]
+  from = "/blog/"
+  to = "/blog"
+  status = 301
+  
+[[redirects]]
+  from = "/topics/prompt-engineering/"
+  to = "/topics/prompt-engineering"
+  status = 301
+
+[[redirects]]
+  from = "/about/"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/privacy/"
+  to = "/privacy" 
+  status = 301
+
+# Blog post redirects
+[[redirects]]
+  from = "/blog/*/index.html"
+  to = "/blog/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*/"
+  to = "/blog/:splat"
+  status = 301
+
+# Topic page redirects  
+[[redirects]]
+  from = "/topics/*/index.html"
+  to = "/topics/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/topics/*/"
+  to = "/topics/:splat"
+  status = 301
+
+# Tag page redirects
+[[redirects]]
+  from = "/tags/*/index.html"
+  to = "/tags/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/tags/*/"
+  to = "/tags/:splat"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# Cache headers for static assets
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
