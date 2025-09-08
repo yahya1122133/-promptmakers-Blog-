@@ -60,10 +60,12 @@
   to = "/tags/:splat"
   status = 301
 
+# SPA fallback for existing routes only
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 
 # Security headers

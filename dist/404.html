@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Promptmakers Blog</title>
+    <meta name="description" content="Sorry, the page you're looking for doesn't exist. Explore our AI prompt engineering guides and tutorials.">
+    <link rel="icon" type="image/png" href="/images/favicon.icon.png">
+    
+    <!-- Critical CSS for 404 page -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a202c;
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: #3b82f6;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a202c;
+        }
+        
+        .error-description {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+        
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #3b82f6;
+            border-color: #3b82f6;
+        }
+        
+        .btn-secondary:hover {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .suggestions {
+            margin-top: 2rem;
+        }
+        
+        .suggestions h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #1a202c;
+        }
+        
+        .suggestion-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .suggestion-link {
+            color: #3b82f6;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+        
+        .suggestion-link:hover {
+            background: #e2e8f0;
+            transform: translateY(-1px);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .suggestion-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-description">
+            Sorry, we couldn't find the page you're looking for. It might have been moved, deleted, or you entered the wrong URL.
+        </p>
+        
+        <div class="actions">
+            <a href="/" class="btn btn-primary">
+                ← Back to Home
+            </a>
+            <a href="/blog" class="btn btn-secondary">
+                Browse Articles
+            </a>
+        </div>
+        
+        <div class="suggestions">
+            <h3>Popular Pages</h3>
+            <div class="suggestion-links">
+                <a href="/blog/advanced-prompt-engineering-techniques" class="suggestion-link">
+                    Advanced Prompt Engineering
+                </a>
+                <a href="/blog/5-hacks-insanely-good-ai-prompts" class="suggestion-link">
+                    5 AI Prompt Hacks
+                </a>
+                <a href="/blog/mastering-prompt-templates" class="suggestion-link">
+                    Prompt Templates
+                </a>
+                <a href="/topics/prompt-engineering" class="suggestion-link">
+                    Prompt Engineering Guide
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Track 404 errors for analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: '404 - Page Not Found',
+                page_location: window.location.href
+            });
+        }
+    </script>
+</body>
+</html>
