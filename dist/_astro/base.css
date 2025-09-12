@@ -7,6 +7,15 @@
     border-radius: 0.5rem;
 }
 
+/* Fix for gradient text visibility issues */
+.gradient-text {
+    color: #8b5cf6 !important;
+    font-weight: 700 !important;
+    background: none !important;
+    -webkit-text-fill-color: unset !important;
+    -webkit-background-clip: unset !important;
+}
+
 .post-image picture img,
 .post-image[data-astro-cid-j7pv25f6] picture img {
     width: 100% !important;
@@ -37,4 +46,52 @@
     .related-image picture img {
         height: 120px;
     }
+}
+
+/* Enhanced mobile UI improvements */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.05rem;
+    padding: 0 0.5rem;
+  }
+  h1, .hero-title, .section-title {
+    font-size: 2rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 1rem !important;
+  }
+  h2, h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .btn, button, .btn-primary, .btn-secondary {
+    font-size: 1rem !important;
+    padding: 1rem 1.5rem !important;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .container {
+    padding: 0 0.25rem !important;
+  }
+  img, picture img {
+    max-width: 100vw !important;
+    height: auto !important;
+    border-radius: 0.5rem !important;
+  }
+  .post-image picture img, .article-image picture img {
+    height: 160px !important;
+  }
+  .footer, .header {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  nav, .nav {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+    align-items: flex-start !important;
+  }
+  .hero-actions {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    align-items: stretch !important;
+  }
 }

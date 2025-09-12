@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://blog.promptmakers.app/</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://blog.promptmakers.app/blog/</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -19,7 +19,7 @@
   <!-- Authors Page -->
   <url>
     <loc>https://blog.promptmakers.app/authors/</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -27,7 +27,7 @@
   <!-- Topic Pages -->
   <url>
     <loc>https://blog.promptmakers.app/topics/prompt-engineering/</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -70,126 +70,132 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://blog.promptmakers.app/blog/ai-agents-ultimate-guide/</loc>
+    <lastmod>2025-09-09T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   
   <!-- Tag Pages -->
   
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=prompt-engineering</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=chatgpt</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=gemini</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=ai-tips</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=productivity</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=beginners</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=ai-basics</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=tutorial</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=framework</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=methodology</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=ai-optimization</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=templates</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=workflow</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=automation</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=claude</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=ai-comparison</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=model-selection</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=advanced-techniques</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=few-shot-learning</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blog.promptmakers.app/blog?tag=chain-of-thought</loc>
-    <lastmod>2025-09-04T20:47:08.474Z</lastmod>
+    <lastmod>2025-09-12T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

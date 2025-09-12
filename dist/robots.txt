@@ -4,8 +4,6 @@ Allow: /
 # Sitemap
 Sitemap: https://blog.promptmakers.app/sitemap.xml
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
 
 # Allow all search engines to index the blog
 User-agent: Googlebot
