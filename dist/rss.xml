@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Promptmakers Blog - AI &amp; Prompt Engineering</title>
     <description>Master AI prompt engineering with practical guides, tips, and tutorials for ChatGPT, Gemini, Claude, and other AI models. Discover the latest AI trends and agent technologies.</description>
-    <link>https://promptmakers.app/</link>
-    <atom:link href="https://promptmakers.app/rss.xml" rel="self" type="application/rss+xml"/>
+    <link>https://blog.promptmakers.app/</link>
+    <atom:link href="https://blog.promptmakers.app/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Sep 2025 00:00:00 GMT</lastBuildDate>
-    <generator>Promptmakers Blog</generator>
+    <generator>Astro</generator>
     <image>
-      <url>https://promptmakers.app/images/logo.png</url>
+      <url>https://blog.promptmakers.app/images/logo.png</url>
       <title>Promptmakers Blog</title>
-      <link>https://promptmakers.app/</link>
+      <link>https://blog.promptmakers.app/</link>
     </image>
     
-    <!-- AI Agents Ultimate Guide -->
+    <!-- Item 1: AI Agents Ultimate Guide -->
     <item>
-      <title>🚀 AI Agents: The Ultimate Guide to Autonomous AI That Works While You Sleep</title>
+      <title>AI Agents: The Ultimate Guide to Autonomous AI That Works While You Sleep</title>
       <description>🤖 Discover how AI agents are revolutionizing productivity. Learn what they are, how they work, and how to build your first AI agent that handles tasks automatically. No coding required!</description>
       <content:encoded><![CDATA[
+        <img src="https://blog.promptmakers.app/images/ai-agents-guide.webp" alt="A visual guide to AI Agents" />
         <p>AI agents are transforming how we work and live. These autonomous digital assistants can handle complex tasks, make decisions, and operate 24/7 without constant supervision.</p>
         <p>In this comprehensive guide, you'll learn:</p>
         <ul>
@@ -26,54 +27,75 @@
           <li>Real-world applications and use cases</li>
           <li>How to build your first AI agent</li>
           <li>Best practices and implementation strategies</li>
-          <li>The future of autonomous AI</li>
         </ul>
-        <p>Whether you're a business owner looking to automate workflows or a developer exploring AI possibilities, this guide provides everything you need to get started with AI agents.</p>
+        <p>Whether you're a business owner looking to automate workflows or a developer exploring AI possibilities, this guide provides everything you need to get started.</p>
+        <p><a href="https://blog.promptmakers.app/blog/ai-agents-ultimate-guide/">Continue reading on the blog...</a></p>
       ]]></content:encoded>
-      <link>https://promptmakers.app/blog/ai-agents-ultimate-guide/</link>
-      <guid isPermaLink="true">https://promptmakers.app/blog/ai-agents-ultimate-guide/</guid>
+      <link>https://blog.promptmakers.app/blog/ai-agents-ultimate-guide/</link>
+      <guid isPermaLink="true">https://blog.promptmakers.app/blog/ai-agents-ultimate-guide/</guid>
       <pubDate>Mon, 09 Sep 2025 00:00:00 GMT</pubDate>
-      <author>Alex Chen</author>
+      <author>authors@promptmakers.app (Alex Chen)</author>
+      <dc:creator>Alex Chen</dc:creator>
       <category>AI Agents</category>
-      <category>Artificial Intelligence</category>
       <category>Automation</category>
-      <category>Productivity</category>
+      <enclosure url="https://blog.promptmakers.app/images/ai-agents-guide.webp" length="54321" type="image/webp" />
     </item>
     
-    <!-- Advanced Prompt Engineering -->
+    <!-- Item 2: Advanced Prompt Engineering -->
     <item>
       <title>Advanced Prompt Engineering Techniques: Beyond the Basics</title>
       <description>Take your AI interactions to the next level with advanced prompt engineering strategies that professionals use to get exceptional results.</description>
-      <link>https://promptmakers.app/blog/advanced-prompt-engineering-techniques/</link>
-      <guid isPermaLink="true">https://promptmakers.app/blog/advanced-prompt-engineering-techniques/</guid>
+      <content:encoded><![CDATA[
+        <img src="https://blog.promptmakers.app/images/advanced-prompt-techniques.webp" alt="Advanced Prompt Engineering Techniques" />
+        <p>Ready to move beyond basic prompts? This guide explores professional strategies like few-shot learning, chain-of-thought reasoning, and prompt chaining to help you get more accurate and creative results from any AI model.</p>
+        <p><a href="https://blog.promptmakers.app/blog/advanced-prompt-engineering-techniques/">Continue reading on the blog...</a></p>
+      ]]></content:encoded>
+      <link>https://blog.promptmakers.app/blog/advanced-prompt-engineering-techniques/</link>
+      <guid isPermaLink="true">https://blog.promptmakers.app/blog/advanced-prompt-engineering-techniques/</guid>
       <pubDate>Wed, 04 Sep 2025 00:00:00 GMT</pubDate>
-      <author>Sarah Johnson</author>
+      <author>authors@promptmakers.app (Sarah Johnson)</author>
+      <dc:creator>Sarah Johnson</dc:creator>
       <category>Prompt Engineering</category>
       <category>AI Tips</category>
+      <enclosure url="https://blog.promptmakers.app/images/advanced-prompt-techniques.webp" length="61234" type="image/webp" />
     </item>
     
-    <!-- 5 Hacks for Insanely Good AI Prompts -->
+    <!-- Item 3: 5 Hacks for Insanely Good AI Prompts -->
     <item>
       <title>5 Hacks for Writing Insanely Good AI Prompts (That Actually Work)</title>
       <description>Transform your AI interactions with these 5 proven prompt hacks that get better results every time. Includes examples and templates.</description>
-      <link>https://promptmakers.app/blog/5-hacks-insanely-good-ai-prompts/</link>
-      <guid isPermaLink="true">https://promptmakers.app/blog/5-hacks-insanely-good-ai-prompts/</guid>
+      <content:encoded><![CDATA[
+        <img src="https://blog.promptmakers.app/images/ai-prompts-hero.webp" alt="5 Hacks for Insanely Good AI Prompts" />
+        <p>Tired of generic AI responses? Learn 5 simple but powerful hacks to improve your prompts instantly. This article covers role-playing, setting constraints, providing examples, and more.</p>
+        <p><a href="https://blog.promptmakers.app/blog/5-hacks-insanely-good-ai-prompts/">Continue reading on the blog...</a></p>
+      ]]></content:encoded>
+      <link>https://blog.promptmakers.app/blog/5-hacks-insanely-good-ai-prompts/</link>
+      <guid isPermaLink="true">https://blog.promptmakers.app/blog/5-hacks-insanely-good-ai-prompts/</guid>
       <pubDate>Mon, 02 Sep 2025 00:00:00 GMT</pubDate>
-      <author>Michael Rodriguez</author>
+      <author>authors@promptmakers.app (Michael Rodriguez)</author>
+      <dc:creator>Michael Rodriguez</dc:creator>
       <category>Prompt Engineering</category>
       <category>AI Tips</category>
+      <enclosure url="https://blog.promptmakers.app/images/ai-prompts-hero.webp" length="58765" type="image/webp" />
     </item>
     
-    <!-- Prompt Engineering 101 -->
+    <!-- Item 4: Prompt Engineering 101 -->
     <item>
       <title>Prompt Engineering 101: The Complete Beginner's Guide</title>
       <description>Learn the fundamentals of prompt engineering with this comprehensive beginner's guide. Master the art of communicating with AI effectively.</description>
-      <link>https://promptmakers.app/blog/prompt-engineering-101-basics/</link>
-      <guid isPermaLink="true">https://promptmakers.app/blog/prompt-engineering-101-basics/</guid>
+      <content:encoded><![CDATA[
+        <img src="https://blog.promptmakers.app/images/prompt-engineering-basics.webp" alt="Prompt Engineering 101 Basics" />
+        <p>New to AI prompts? Start here! This beginner-friendly guide covers everything you need to know about crafting effective prompts, from basic principles to practical examples you can use today.</p>
+        <p><a href="https://blog.promptmakers.app/blog/prompt-engineering-101-basics/">Continue reading on the blog...</a></p>
+      ]]></content:encoded>
+      <link>https://blog.promptmakers.app/blog/prompt-engineering-101-basics/</link>
+      <guid isPermaLink="true">https://blog.promptmakers.app/blog/prompt-engineering-101-basics/</guid>
       <pubDate>Sun, 01 Sep 2025 00:00:00 GMT</pubDate>
-      <author>Emily Chen</author>
+      <author>authors@promptmakers.app (Emily Chen)</author>
+      <dc:creator>Emily Chen</dc:creator>
       <category>Prompt Engineering</category>
       <category>Beginner</category>
+      <enclosure url="https://blog.promptmakers.app/images/prompt-engineering-basics.webp" length="47891" type="image/webp" />
     </item>
     
   </channel>
