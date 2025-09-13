@@ -181,6 +181,14 @@
 
     <!-- Deferred Scripts -->
     <script src="/_astro/Search.astro_astro_type_script_index_0_lang.CsPf_NSL.js" defer></script>
-    <script src="/scripts/analytics.js" defer></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1HSPM1VF3J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1HSPM1VF3J');
+    </script>
 </body>
 </html>

@@ -16,8 +16,14 @@
     <!-- Open Graph / Twitter -->
     <meta property="og:title" content="Promptmakers Blog - Master AI Prompt Engineering">
     <meta property="og:description" content="Learn advanced prompt engineering techniques and best practices.">
-    <meta property="og:image" content="https://promptmakers.app/images/og-image.jpg">
+    <meta property="og:image" content="https://blog.promptmakers.app/images/ai-prompts-hero.jpg">
+    
+    <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blog.promptmakers.app/">
+    <meta property="twitter:title" content="Promptmakers Blog - Master AI Prompt Engineering">
+    <meta property="twitter:description" content="Learn advanced prompt engineering techniques and best practices.">
+    <meta property="twitter:image" content="https://blog.promptmakers.app/images/ai-prompts-hero.jpg">
 
     <!-- Optimized Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +91,39 @@
         }
         .search-input:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px #8b5cf61a; }
         .search-icon { position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--color-text-secondary); }
-        .mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; }
+        .mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--color-text); transition: transform 0.2s ease; }
+        .mobile-menu-toggle:hover { color: var(--color-primary); }
+        .mobile-menu-toggle.active { transform: rotate(90deg); }
+
+        /* Mobile Menu */
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--color-bg);
+            border-top: 1px solid var(--color-border);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .mobile-nav.open { display: block; }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+        }
+        .mobile-nav-link {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-border);
+            transition: color 0.2s ease;
+        }
+        .mobile-nav-link:hover { color: var(--color-primary); }
+        .mobile-nav-link:last-child { border-bottom: none; }
 
         /* 3. Hero Section */
         .hero { text-align: center; padding: 5rem 0; }
@@ -164,7 +202,7 @@
             .hero { padding: 3rem 0; }
             .hero-title { font-size: 2.5rem; }
             .hero-description { font-size: 1.1rem; }
-            .nav-links, .header-search { display: none; } /* Hide for simple mobile view; JS needed for toggle */
+            .nav-links, .header-search { display: none; }
             .mobile-menu-toggle { display: block; }
             .newsletter-form { flex-direction: column; }
             .footer-content { grid-template-columns: 1fr; text-align: center; }
@@ -275,10 +313,18 @@
                     <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
                     <input type="search" id="search-input" class="search-input" placeholder="Search articles..." aria-label="Search articles">
                 </div>
-                <button class="mobile-menu-toggle" aria-label="Open menu">
+                <button class="mobile-menu-toggle" aria-label="Open menu" onclick="toggleMobileMenu()">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </nav>
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <div class="mobile-nav-links">
+                    <a href="/" class="mobile-nav-link">Home</a>
+                    <a href="/blog" class="mobile-nav-link">All Posts</a>
+                    <a href="https://promptmakers.app" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">Promptmakers App ↗</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -406,7 +452,7 @@
                     <ul class="footer-links">
                         <li><a href="/">Home</a></li>
                         <li><a href="/blog">All Posts</a></li>
-                        <li><a href="/blog/ai-agents-ultimate-guide">Ultimate Guide</a></li>
+                        <li><a href="https://promptmakers.app/guide/ai-prompt-engineering">Ultimate Guide</a></li>
                         <li><a href="https://promptmakers.app" target="_blank" rel="noopener noreferrer">Promptmakers App</a></li>
                     </ul>
                 </div>
@@ -426,9 +472,58 @@
         </div>
     </footer>
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1HSPM1VF3J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1HSPM1VF3J');
+    </script>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            const toggleButton = document.querySelector('.mobile-menu-toggle');
+            
+            if (mobileNav.classList.contains('open')) {
+                mobileNav.classList.remove('open');
+                toggleButton.classList.remove('active');
+                toggleButton.setAttribute('aria-label', 'Open menu');
+            } else {
+                mobileNav.classList.add('open');
+                toggleButton.classList.add('active');
+                toggleButton.setAttribute('aria-label', 'Close menu');
+            }
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobile-nav');
+            const toggleButton = document.querySelector('.mobile-menu-toggle');
+            
+            if (!toggleButton.contains(event.target) && !mobileNav.contains(event.target)) {
+                mobileNav.classList.remove('open');
+                toggleButton.classList.remove('active');
+                toggleButton.setAttribute('aria-label', 'Open menu');
+            }
+        });
+
+        // Close mobile menu on window resize if desktop view
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                const mobileNav = document.getElementById('mobile-nav');
+                const toggleButton = document.querySelector('.mobile-menu-toggle');
+                mobileNav.classList.remove('open');
+                toggleButton.classList.remove('active');
+                toggleButton.setAttribute('aria-label', 'Open menu');
+            }
+        });
+    </script>
+
     <!-- Deferred Scripts for Performance -->
     <script src="/_astro/Search.astro_astro_type_script_index_0_lang.CsPf_NSL.js" defer></script>
-    <script src="/scripts/analytics.js" defer></script>
 
 </body>
 </html>
