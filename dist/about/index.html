@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Promptmakers Blog - AI Prompt Engineering Experts</title>
+    <meta name="description" content="Learn about the Promptmakers team and our mission to democratize AI prompt engineering. Meet our experts who create practical guides for ChatGPT, Gemini, Claude, and more.">
+    <meta name="keywords" content="about promptmakers, AI prompt engineering experts, prompt engineering team, AI automation specialists, ChatGPT experts, AI content creators">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Promptmakers Team">
+    <link rel="canonical" href="https://blog.promptmakers.app/about/">
+    <link rel="icon" type="image/png" href="/images/favicon.icon.png">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="About Promptmakers Blog - AI Prompt Engineering Experts">
+    <meta property="og:description" content="Meet the experts behind Promptmakers Blog who create practical AI prompt engineering guides and tutorials.">
+    <meta property="og:image" content="https://blog.promptmakers.app/images/team-promptmakers.jpg">
+    <meta property="og:url" content="https://blog.promptmakers.app/about/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blog.promptmakers.app/about/">
+    <meta property="twitter:title" content="About Promptmakers Blog - AI Prompt Engineering Experts">
+    <meta property="twitter:description" content="Meet the experts behind Promptmakers Blog who create practical AI prompt engineering guides and tutorials.">
+    <meta property="twitter:image" content="https://blog.promptmakers.app/images/team-promptmakers.jpg">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://blog.promptmakers.app/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About",
+                "item": "https://blog.promptmakers.app/about/"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Promptmakers Blog",
+        "description": "Learn about the Promptmakers team and our mission to democratize AI prompt engineering through practical guides and tutorials.",
+        "url": "https://blog.promptmakers.app/about/",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Promptmakers",
+            "url": "https://promptmakers.app",
+            "logo": "https://promptmakers.app/images/logo.png",
+            "description": "AI prompt engineering experts creating practical guides and tools",
+            "foundingDate": "2025",
+            "areaServed": "Worldwide",
+            "knowsAbout": [
+                "Prompt Engineering",
+                "Artificial Intelligence",
+                "ChatGPT",
+                "Google Gemini",
+                "Claude AI",
+                "AI Automation",
+                "AI Agents",
+                "Machine Learning"
+            ],
+            "sameAs": [
+                "https://blog.promptmakers.app"
+            ]
+        }
+    }
+    </script>
+
+    <!-- Optimized Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Consolidated CSS -->
+    <style>
+        /* 1. Global Styles & Variables */
+        :root {
+            --color-primary: #8b5cf6;
+            --color-secondary: #ec4899;
+            --color-bg: #ffffff;
+            --color-bg-secondary: #f7f7f8;
+            --color-text: #1a202c;
+            --color-text-secondary: #4a5568;
+            --color-border: #e2e8f0;
+            --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: var(--font-family-sans);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .main { padding-top: 2rem; }
+
+        /* 2. Header & Navigation */
+        .header {
+            position: sticky; top: 0; z-index: 100;
+            background-color: var(--color-bg);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+        }
+        .nav-wrapper { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--color-text); font-weight: 600; font-size: 1.25rem; }
+        .logo-icon { font-size: 1.5rem; }
+        .nav-links { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-link { text-decoration: none; color: var(--color-text-secondary); font-weight: 500; transition: color 0.2s ease; }
+        .nav-link:hover { color: var(--color-primary); }
+        .nav-link.active { color: var(--color-primary); font-weight: 600; }
+
+        /* Header Search Styles */
+        .header-search { position: relative; }
+        .search-container { position: relative; }
+        .search-input {
+            width: 250px; padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+            border: 1px solid var(--color-border); border-radius: 0.5rem;
+            background-color: var(--color-bg-secondary); color: var(--color-text);
+            font-size: 0.9rem; transition: all 0.3s ease;
+        }
+        .search-input:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px #8b5cf61a; }
+        .search-icon { position: absolute; left: 0.75rem; top: 50%; transform: translateY(-50%); color: var(--color-text-secondary); pointer-events: none; z-index: 2; }
+        .clear-search {
+            position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%);
+            background: none; border: none; cursor: pointer; color: var(--color-text-secondary);
+            padding: 0.25rem; border-radius: 0.25rem; display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s ease; z-index: 2;
+        }
+        .clear-search:hover { color: var(--color-text); background-color: var(--color-border); }
+        
+        /* Search Results Dropdown */
+        .search-results {
+            position: absolute; top: calc(100% + 0.5rem); left: 0; right: 0;
+            background: var(--color-bg); border: 1px solid var(--color-border);
+            border-radius: 0.75rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            max-height: 400px; overflow-y: auto; z-index: 1000;
+            animation: searchDropdown 0.2s ease-out;
+        }
+        
+        @keyframes searchDropdown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .search-results-header {
+            padding: 1rem 1rem 0.5rem; border-bottom: 1px solid var(--color-border);
+            font-size: 0.85rem; color: var(--color-text-secondary); font-weight: 500;
+        }
+        
+        .results-list { padding: 0.5rem 0; }
+        
+        .result-item {
+            display: block; padding: 1rem; text-decoration: none; color: inherit;
+            border-bottom: 1px solid var(--color-border); transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .result-item:last-child { border-bottom: none; }
+        .result-item:hover {
+            background-color: var(--color-bg-secondary);
+            transform: translateX(2px);
+        }
+        
+        .result-title {
+            font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;
+            line-height: 1.4; color: var(--color-text);
+        }
+        .result-description {
+            font-size: 0.85rem; color: var(--color-text-secondary);
+            line-height: 1.4; margin-bottom: 0.5rem;
+            overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;
+            line-clamp: 2; -webkit-box-orient: vertical;
+        }
+        .result-meta {
+            display: flex; align-items: center; gap: 0.75rem; font-size: 0.8rem;
+            color: var(--color-text-secondary);
+        }
+        .result-tag {
+            background-color: #8b5cf61a; color: var(--color-primary);
+            padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-weight: 500;
+        }
+        
+        .highlight {
+            background-color: #ffeb3b; padding: 0.1rem 0.2rem; border-radius: 0.2rem;
+            font-weight: 600; color: #333;
+        }
+        
+        .no-results {
+            padding: 2rem; text-align: center; color: var(--color-text-secondary);
+        }
+        .no-results svg {
+            opacity: 0.3; margin-bottom: 1rem;
+        }
+        .no-results p {
+            font-size: 1rem; font-weight: 500; margin: 0 0 0.5rem;
+        }
+        .no-results small {
+            font-size: 0.85rem;
+        }
+        .no-results a {
+            color: var(--color-primary); text-decoration: none; font-weight: 500;
+        }
+        .no-results a:hover { text-decoration: underline; }
+
+        /* Mobile Menu Styles */
+        .mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--color-text); transition: transform 0.2s ease; }
+        .mobile-menu-toggle:hover { color: var(--color-primary); }
+        .mobile-menu-toggle.active { transform: rotate(90deg); }
+        
+        .mobile-search-trigger {
+            display: none; background: none; border: none; cursor: pointer;
+            color: var(--color-text); transition: color 0.2s ease;
+        }
+        .mobile-search-trigger:hover { color: var(--color-primary); }
+        
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--color-bg);
+            border-top: 1px solid var(--color-border);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .mobile-nav.open { display: block; }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+        }
+        .mobile-nav-link {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-border);
+            transition: color 0.2s ease;
+        }
+        .mobile-nav-link:hover { color: var(--color-primary); }
+        .mobile-nav-link:last-child { border-bottom: none; }
+
+        /* 3. Page Styles */
+        .page-header { text-align: center; padding: 3rem 0; background: linear-gradient(135deg, #8b5cf61a, #ec489933); }
+        .page-title { font-size: 3rem; font-weight: 700; margin: 0 0 1rem; }
+        .page-description { font-size: 1.25rem; color: var(--color-text-secondary); max-width: 600px; margin: 0 auto; }
+        
+        .content-section { padding: 3rem 0; }
+        .section-title { font-size: 2rem; font-weight: 700; margin-bottom: 2rem; }
+        .prose { max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; }
+        .prose p { margin-bottom: 1.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; color: var(--color-primary); }
+        
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .team-member { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 1rem; padding: 2rem; text-align: center; }
+        .member-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; font-weight: 600; }
+        .member-name { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .member-role { color: var(--color-primary); font-weight: 500; margin-bottom: 1rem; }
+        .member-bio { color: var(--color-text-secondary); }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .stat-card { text-align: center; padding: 2rem; background: var(--color-bg-secondary); border-radius: 1rem; }
+        .stat-number { font-size: 2.5rem; font-weight: 700; color: var(--color-primary); }
+        .stat-label { color: var(--color-text-secondary); font-weight: 500; }
+
+        /* 4. Footer */
+        .footer { background: var(--color-bg-secondary); padding: 4rem 0; border-top: 1px solid var(--color-border); margin-top: 4rem; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+        .footer-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+        .footer-description { color: var(--color-text-secondary); margin: 0; }
+        .footer-subtitle { font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
+        .footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-links a { text-decoration: none; color: var(--color-text-secondary); transition: color 0.2s ease; }
+        .footer-links a:hover { color: var(--color-primary); }
+        .footer-bottom { border-top: 1px solid var(--color-border); padding-top: 2rem; display: flex; justify-content: space-between; color: var(--color-text-secondary); font-size: 0.9rem; }
+        .heart { color: var(--color-secondary); }
+
+        /* 5. Responsive */
+        @media (max-width: 768px) {
+            .page-title { font-size: 2rem; }
+            .nav-links, .header-search { display: none; }
+            .mobile-menu-toggle, .mobile-search-trigger { display: block; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; }
+            .footer-bottom { flex-direction: column; align-items: center; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-wrapper">
+                <a href="/" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Promptmakers</span>
+                </a>
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/blog" class="nav-link">All Posts</a>
+                    <a href="/about" class="nav-link active">About</a>
+                    <a href="/contact" class="nav-link">Contact</a>
+                    <a href="/resources" class="nav-link">Resources</a>
+                    <a href="https://promptmakers.app" class="nav-link" target="_blank" rel="noopener noreferrer">App ↗</a>
+                </div>
+                <div class="header-search">
+                    <div class="search-container">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                        <input type="search" id="search-input" class="search-input" placeholder="Search articles..." aria-label="Search articles" autocomplete="off">
+                        <button type="button" id="clear-search" class="clear-search" aria-label="Clear search" style="display: none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </button>
+                        
+                        <!-- Search Results Dropdown -->
+                        <div id="search-results" class="search-results" style="display: none;">
+                            <div class="search-results-header">
+                                <span id="results-count">0 results</span>
+                                <span id="search-term">for ""</span>
+                            </div>
+                            <div id="results-list" class="results-list">
+                                <!-- Results will be populated here -->
+                            </div>
+                            <div id="no-results" class="no-results" style="display: none;">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                                <p>No articles found</p>
+                                <small>Try different keywords or browse our <a href="/blog">all posts</a></small>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile Search Close Button -->
+                        <button type="button" class="mobile-search-close" onclick="closeMobileSearch()" style="display: none;">×</button>
+                    </div>
+                </div>
+                <button class="mobile-search-trigger" onclick="openMobileSearch()" aria-label="Search" style="display: none;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Open menu" onclick="toggleMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </nav>
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <div class="mobile-nav-links">
+                    <a href="/" class="mobile-nav-link">Home</a>
+                    <a href="/blog" class="mobile-nav-link">All Posts</a>
+                    <a href="/about" class="mobile-nav-link">About</a>
+                    <a href="/contact" class="mobile-nav-link">Contact</a>
+                    <a href="/resources" class="mobile-nav-link">Resources</a>
+                    <a href="https://promptmakers.app" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">Promptmakers App ↗</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">About Promptmakers</h1>
+                <p class="page-description">We're on a mission to democratize AI prompt engineering and make advanced AI techniques accessible to everyone.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="prose">
+                    <h3>Our Mission</h3>
+                    <p>At Promptmakers, we believe that effective AI prompt engineering is the key to unlocking the full potential of artificial intelligence. Our mission is to bridge the gap between complex AI capabilities and practical, everyday applications through comprehensive guides, tutorials, and tools.</p>
+
+                    <h3>What We Do</h3>
+                    <p>We create in-depth, practical content that helps individuals and businesses master AI prompt engineering across all major platforms including ChatGPT, Google Gemini, Claude AI, and emerging AI models. Our content covers everything from basic prompt structures to advanced techniques like few-shot learning, chain-of-thought reasoning, and AI agent development.</p>
+
+                    <h3>Our Approach</h3>
+                    <p>We focus on real-world applications rather than theoretical concepts. Every guide we publish is tested, refined, and designed to deliver immediate, practical value. Whether you're a complete beginner or an advanced user, our content is structured to help you achieve better AI results faster.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Monthly Readers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Guides Published</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Prompt Templates</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">User Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="background: var(--color-bg-secondary);">
+            <div class="container">
+                <h2 class="section-title" style="text-align: center;">Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">AC</div>
+                        <h3 class="member-name">Alex Chen</h3>
+                        <div class="member-role">Lead AI Researcher</div>
+                        <p class="member-bio">Former OpenAI researcher with 8+ years in AI development. Specializes in advanced prompt engineering and AI agent architecture.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">SJ</div>
+                        <h3 class="member-name">Sarah Johnson</h3>
+                        <div class="member-role">Content Strategy Director</div>
+                        <p class="member-bio">Technical writer and AI educator with expertise in making complex AI concepts accessible to diverse audiences.</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">MR</div>
+                        <h3 class="member-name">Mike Rodriguez</h3>
+                        <div class="member-role">Product Development Lead</div>
+                        <p class="member-bio">Full-stack developer and AI automation specialist focused on building practical AI tools and integrations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="prose">
+                    <h3>Our Values</h3>
+                    <p><strong>Practical Focus:</strong> Every piece of content we create is designed to solve real problems and deliver measurable results.</p>
+                    <p><strong>Accessibility:</strong> We believe advanced AI techniques should be accessible to everyone, regardless of technical background.</p>
+                    <p><strong>Continuous Learning:</strong> The AI landscape evolves rapidly, and we're committed to staying at the forefront of new developments.</p>
+                    <p><strong>Community First:</strong> We're building a community of AI practitioners who share knowledge and help each other succeed.</p>
+
+                    <h3>Get Involved</h3>
+                    <p>Whether you're looking to improve your AI prompt skills, contribute to our community, or collaborate on AI projects, we'd love to hear from you. <a href="/contact" style="color: var(--color-primary); text-decoration: none;">Get in touch</a> to learn more about how we can work together.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Promptmakers Blog</h3>
+                    <p class="footer-description">Master the art of AI prompt engineering with practical guides, tips, and techniques.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog">All Posts</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Topics</h4>
+                    <ul class="footer-links">
+                        <li><a href="/blog/category/prompt-engineering">Prompt Engineering</a></li>
+                        <li><a href="/blog/category/chatgpt">ChatGPT</a></li>
+                        <li><a href="/blog/category/ai-tools">AI Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Promptmakers. All rights reserved.</p>
+                <p>Built with <span class="heart">♥</span> and expertise</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            const toggleButton = document.querySelector('.mobile-menu-toggle');
+            
+            mobileNav.classList.toggle('open');
+            toggleButton.classList.toggle('active');
+        }
+
+        // Search Functionality
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        const clearButton = document.getElementById('clear-search');
+        const resultsCount = document.getElementById('results-count');
+        const searchTerm = document.getElementById('search-term');
+        const resultsList = document.getElementById('results-list');
+        const noResults = document.getElementById('no-results');
+
+        // Sample blog posts data for search
+        const blogPosts = [
+            {
+                title: "Advanced Prompt Engineering Techniques: Beyond the Basics",
+                description: "Take your AI interactions to the next level with advanced prompt engineering strategies that professionals use to get exceptional results.",
+                url: "/blog/advanced-prompt-engineering-techniques/",
+                tags: ["prompt-engineering", "advanced-techniques"]
+            },
+            {
+                title: "ChatGPT vs Gemini vs Claude: Complete AI Comparison 2025",
+                description: "Detailed comparison of the three leading AI models with real-world testing, performance analysis, and recommendations for different use cases.",
+                url: "/blog/chatgpt-vs-gemini-vs-claude/",
+                tags: ["ai-comparison", "chatgpt", "gemini", "claude"]
+            },
+            {
+                title: "50 Essential ChatGPT Prompts for Business Success",
+                description: "Ready-to-use ChatGPT prompts for marketing, sales, customer service, content creation, and business strategy.",
+                url: "/blog/chatgpt-business-prompts-2025/",
+                tags: ["chatgpt", "business-prompts", "productivity"]
+            }
+        ];
+
+        let searchTimeout;
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.trim();
+            
+            clearTimeout(searchTimeout);
+            
+            if (query.length === 0) {
+                hideSearchResults();
+                clearButton.style.display = 'none';
+                return;
+            }
+            
+            clearButton.style.display = 'flex';
+            
+            searchTimeout = setTimeout(() => {
+                performSearch(query);
+            }, 300);
+        });
+
+        clearButton.addEventListener('click', function() {
+            searchInput.value = '';
+            hideSearchResults();
+            clearButton.style.display = 'none';
+            searchInput.focus();
+        });
+
+        function performSearch(query) {
+            const results = blogPosts.filter(post => 
+                post.title.toLowerCase().includes(query.toLowerCase()) ||
+                post.description.toLowerCase().includes(query.toLowerCase()) ||
+                post.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
+            );
+
+            displaySearchResults(results, query);
+        }
+
+        function displaySearchResults(results, query) {
+            resultsCount.textContent = `${results.length} result${results.length !== 1 ? 's' : ''}`;
+            searchTerm.textContent = `for "${query}"`;
+            
+            if (results.length === 0) {
+                resultsList.style.display = 'none';
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+                resultsList.style.display = 'block';
+                
+                resultsList.innerHTML = results.map(post => `
+                    <a href="${post.url}" class="result-item">
+                        <div class="result-title">${highlightText(post.title, query)}</div>
+                        <div class="result-description">${highlightText(post.description, query)}</div>
+                        <div class="result-meta">
+                            ${post.tags.map(tag => `<span class="result-tag">#${tag}</span>`).join('')}
+                        </div>
+                    </a>
+                `).join('');
+            }
+            
+            searchResults.style.display = 'block';
+        }
+
+        function highlightText(text, query) {
+            const regex = new RegExp(`(${query})`, 'gi');
+            return text.replace(regex, '<span class="highlight">$1</span>');
+        }
+
+        function hideSearchResults() {
+            searchResults.style.display = 'none';
+        }
+
+        // Close search results when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                hideSearchResults();
+            }
+        });
+
+        // Mobile Search Functions
+        function openMobileSearch() {
+            // Implementation for mobile search if needed
+        }
+
+        function closeMobileSearch() {
+            // Implementation for mobile search if needed
+        }
+    </script>
+</body>
+</html>

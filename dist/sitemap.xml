@@ -199,4 +199,59 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+  
+  <!-- New Foundational Pages -->
+  <url>
+    <loc>https://blog.promptmakers.app/about/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.promptmakers.app/contact/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.promptmakers.app/resources/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- New Category Pages -->
+  <url>
+    <loc>https://blog.promptmakers.app/blog/category/prompt-engineering/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.promptmakers.app/blog/category/chatgpt/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.promptmakers.app/blog/category/ai-tools/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- New High-Value Blog Posts -->
+  <url>
+    <loc>https://blog.promptmakers.app/blog/chatgpt-business-prompts-2025/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.promptmakers.app/blog/best-ai-tools-2025-comparison/</loc>
+    <lastmod>2025-09-14T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
 </urlset>
