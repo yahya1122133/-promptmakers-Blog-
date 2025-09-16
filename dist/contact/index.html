@@ -10,7 +10,17 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="Promptmakers Team">
     <link rel="canonical" href="https://blog.promptmakers.app/contact/">
-    <link rel="icon" type="image/png" href="/images/favicon.icon.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.icon.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.icon.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.icon.png"><link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.icon.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.icon.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.icon.png"><link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Open Graph / Twitter -->
     <meta property="og:title" content="Contact Promptmakers - Get in Touch with AI Prompt Engineering Experts">
@@ -80,11 +90,11 @@
     }
     </script>
 
-    <!-- Optimized Font Loading -->
+    <!-- Optimized Font Loading (Non-Render-Blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
     <!-- Consolidated CSS -->
     <style>
         /* 1. Global Styles & Variables */
@@ -428,7 +438,7 @@
                                 <div class="contact-icon">📧</div>
                                 <div class="contact-details">
                                     <h3>General Inquiries</h3>
-                                    <p><a href="mailto:mindsetwarriorsacademy@gmail.com">mindsetwarriorsacademy@gmail.com</a></p>
+                                    <p><a href="mailto:hello@promptmakers.app">hello@promptmakers.app</a></p>
                                     <p>For general questions, feedback, and community inquiries</p>
                                 </div>
                             </div>
@@ -437,7 +447,7 @@
                                 <div class="contact-icon">💼</div>
                                 <div class="contact-details">
                                     <h3>Business & Consulting</h3>
-                                    <p><a href="mailto:mindsetwarriorsacademy@gmail.com">mindsetwarriorsacademy@gmail.com</a></p>
+                                    <p><a href="mailto:business@promptmakers.app">business@promptmakers.app</a></p>
                                     <p>Custom AI training, consulting services, and enterprise solutions</p>
                                 </div>
                             </div>
@@ -446,7 +456,7 @@
                                 <div class="contact-icon">🤝</div>
                                 <div class="contact-details">
                                     <h3>Partnerships</h3>
-                                    <p><a href="mailto:mindsetwarriorsacademy@gmail.com">mindsetwarriorsacademy@gmail.com</a></p>
+                                    <p><a href="mailto:partners@promptmakers.app">partners@promptmakers.app</a></p>
                                     <p>Content collaboration, guest posting, and strategic partnerships</p>
                                 </div>
                             </div>
@@ -455,7 +465,7 @@
                                 <div class="contact-icon">🐛</div>
                                 <div class="contact-details">
                                     <h3>Technical Support</h3>
-                                    <p><a href="mailto:mindsetwarriorsacademy@gmail.com">mindsetwarriorsacademy@gmail.com</a></p>
+                                    <p><a href="mailto:support@promptmakers.app">support@promptmakers.app</a></p>
                                     <p>Website issues, app bugs, and technical assistance</p>
                                 </div>
                             </div>
@@ -464,7 +474,7 @@
 
                     <div class="contact-form">
                         <h3 style="margin-top: 0; margin-bottom: 1.5rem; font-size: 1.5rem; font-weight: 600;">Send us a Message</h3>
-                        <form action="mailto:mindsetwarriorsacademy@gmail.com" method="POST" enctype="text/plain">
+                        <form id="contactForm">
                             <div class="form-group">
                                 <label for="name" class="form-label">Name *</label>
                                 <input type="text" id="name" name="name" class="form-input" required>
@@ -699,6 +709,63 @@
         function closeMobileSearch() {
             // Implementation for mobile search if needed
         }
+
+        // Contact Form Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const subject = formData.get('subject');
+                    const message = formData.get('message');
+                    
+                    // Determine email based on subject
+                    let recipientEmail = 'hello@promptmakers.app'; // default
+                    switch(subject) {
+                        case 'general':
+                            recipientEmail = 'hello@promptmakers.app';
+                            break;
+                        case 'consulting':
+                            recipientEmail = 'business@promptmakers.app';
+                            break;
+                        case 'partnership':
+                            recipientEmail = 'partners@promptmakers.app';
+                            break;
+                        case 'technical':
+                            recipientEmail = 'support@promptmakers.app';
+                            break;
+                        case 'feedback':
+                            recipientEmail = 'hello@promptmakers.app';
+                            break;
+                        case 'other':
+                            recipientEmail = 'hello@promptmakers.app';
+                            break;
+                    }
+                    
+                    // Create mailto link with proper encoding
+                    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject + ' - From: ' + name)}&body=${encodeURIComponent(
+                        `Name: ${name}\n` +
+                        `Email: ${email}\n` +
+                        `Subject: ${subject}\n\n` +
+                        `Message:\n${message}\n\n` +
+                        `---\n` +
+                        `Sent from promptmakers.app contact form`
+                    )}`;
+                    
+                    // Open email client
+                    window.location.href = mailtoLink;
+                    
+                    // Show success message and reset form
+                    alert('Email client opened! Please send the email to complete your message.');
+                    contactForm.reset();
+                });
+            }
+        });
     </script>
 </body>
 </html>
